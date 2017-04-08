@@ -1,0 +1,18 @@
+The program implements file transering between hosts.
+
+to run the program:
+Step1: start the server by entering: "./Server.sh"
+Step2: note the IP address and port number are now showing on Server
+       now Client can send request by entering:
+       "./Client.sh get ServerIP ServerPort localFileName remoteFileName" or
+       "./Client.sh put ServerIP ServerPort reomteFileName localFileName"
+Step3: Client now exits and Server goes back to stage1, waiting for new Clients.
+
+Note:
+1, for bot client and server, home directory is assumed to be the current directory.
+
+2, for get request, for Client
+   if the LocalFile does not exist on Client, create new file and proceed
+   if the LocalFile already exists on Client, incoming data is appended to the existing file.
+
+3, Because server selects a random available port, it is important that when we run client, we input the correct port number on which server is listening. 
