@@ -9,7 +9,7 @@ Step2: note the IP address and port number are now showing on Server
 Step3: Client now exits and Server goes back to stage1, waiting for new Clients.
 
 Note:
-1, for bot client and server, home directory is assumed to be the current directory.
+1, for both client and server, home directory is assumed to be the current directory.
 
 2, for get request, for Client
    if the LocalFile does not exist on Client, create new file and proceed
